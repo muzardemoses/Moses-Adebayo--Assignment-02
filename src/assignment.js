@@ -13,7 +13,7 @@ const assignment = {};
  * @param {Array} arrayOfNumbers the array of numbers to sum
  * @returns number the sum of the numbers
  */
-function sumOfNumbers(arrayOfNumbers) {
+function sumOfNumbers(arrayOfNumbers){
    const result = arrayOfNumbers.reduce((acc, curr) => acc + curr, 0);
     return result
 }
@@ -30,7 +30,8 @@ assignment.sumOfNumbers = sumOfNumbers;
  */
 function countEvenNumbers(arrayOfNumbers) {
   const filteredNumbers = arrayOfNumbers.filter(number => number % 2 === 0);
-    return filteredNumbers.length;
+  const numbersLength = filteredNumbers.length
+    return numbersLength;
 }
 assignment.countEvenNumbers = countEvenNumbers;
 
